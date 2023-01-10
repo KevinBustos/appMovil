@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'clima',
     loadChildren: () => import('./clima/clima.module').then( m => m.ClimaPageModule)
+  },
+  {
+    path: 'conversor',
+    loadChildren: () => import('./conversor/conversor.module').then( m => m.ConversorPageModule)
   }
 ];
 
