@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu/menu.component';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
+import { IonicModule } from '@ionic/angular';
 
 
 
@@ -15,7 +16,8 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
     EncabezadoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    IonicModule
   ]
 })
 export class ComponentsModule { }
