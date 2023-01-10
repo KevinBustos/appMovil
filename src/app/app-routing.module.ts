@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'conversor',
     loadChildren: () => import('./conversor/conversor.module').then( m => m.ConversorPageModule)
   },
+  {
+    path: 'lista-digimon',
+    loadChildren: () => import('./lista-digimon/lista-digimon.module').then( m => m.ListaDigimonPageModule)
+  },
 ];
 
 @NgModule({
