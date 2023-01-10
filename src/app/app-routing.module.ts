@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'clima',
+    loadChildren: () => import('./clima/clima.module').then( m => m.ClimaPageModule)
   }
 ];
 
