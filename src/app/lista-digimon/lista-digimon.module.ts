@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ListaDigimonPageRoutingModule } from './lista-digimon-routing.module';
 
 import { ListaDigimonPage } from './lista-digimon.page';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ListaDigimonPageRoutingModule
+    ListaDigimonPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [ListaDigimonPage]
 })

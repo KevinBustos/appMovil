@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ClimaPageRoutingModule } from './clima-routing.module';
 
 import { ClimaPage } from './clima.page';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ClimaPageRoutingModule
+    ClimaPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [ClimaPage]
 })
