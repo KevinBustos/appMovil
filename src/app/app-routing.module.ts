@@ -27,6 +27,14 @@ const routes: Routes = [
     path: 'lista-digimon',
     loadChildren: () => import('./lista-digimon/lista-digimon.module').then( m => m.ListaDigimonPageModule)
   },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
 ];
 
 @NgModule({
