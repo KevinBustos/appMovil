@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ErrorPage implements OnInit {
 
   titulo='404';
-  isNotLogin = true;
+  isNotLogin = false;
 
   constructor() { }
 

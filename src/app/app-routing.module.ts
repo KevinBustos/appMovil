@@ -8,6 +8,46 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'login',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {
+    path: 'clima',
+    redirectTo: 'clima',
+    pathMatch: 'full'
+  },
+  {
+    path: 'conversor',
+    redirectTo: 'conversor',
+    pathMatch: 'full'
+  },
+  {
+    path: 'lista-digimon',
+    redirectTo: 'lista-digimon',
+    pathMatch: 'full'
+  },
+  {
+    path: 'about',
+    redirectTo: 'about',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'registro',
+    redirectTo: 'registro',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    redirectTo: 'error',
+    pathMatch: 'full'
+  },
+  {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
