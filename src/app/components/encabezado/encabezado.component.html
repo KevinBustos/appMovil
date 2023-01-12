@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
 
-    <ion-buttons  slot="start"> <!-- *ngIf="isNotLogin" -->
+    <ion-buttons *ngIf="isNotLogin" slot="start"> <!-- *ngIf="isNotLogin" -->
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
 

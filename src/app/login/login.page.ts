@@ -10,6 +10,7 @@ import { AlertController, LoadingController, NavController } from '@ionic/angula
 export class LoginPage implements OnInit {
 
   titulo='Login';
+  isNotLogin = false;
   formularioLogin:FormGroup;
 
   constructor(public fb: FormBuilder, 
@@ -30,6 +31,7 @@ this.formularioLogin = this.fb.group({
   async ingresar(){
     
     var f = this.formularioLogin.value;
+    /*var usuarios = JSON.parse(localStorage.getItem("usuario"));*/
 
     if(('admin' == f.nombre && '123' == f.contrasenia) ||
        ('user' == f.nombre && '123' == f.contrasenia)){

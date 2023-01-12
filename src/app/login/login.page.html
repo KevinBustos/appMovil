@@ -1,4 +1,4 @@
-<app-encabezado  [titulo]="titulo"></app-encabezado>
+<app-encabezado [isNotLogin]="isNotLogin" [titulo]="titulo"></app-encabezado>
 
 
 <ion-content>
@@ -30,6 +30,7 @@
       <br>
 
       <ion-button (click)="ingresar()">Ingresar</ion-button>
+      <ion-button routerLink="/registro">Registrarse</ion-button>
 
     </ion-card-content>
 

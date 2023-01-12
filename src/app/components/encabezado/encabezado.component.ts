@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class EncabezadoComponent implements OnInit {
 
   @Input() titulo: string = '';
+  @Input() isNotLogin : boolean = true;
 
   constructor() { }
 
