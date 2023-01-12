@@ -1,3 +1,15 @@
-<p>
-  encabezado works!
-</p>
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+
+    <ion-buttons  slot="start"> <!-- *ngIf="isNotLogin" -->
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title></ion-title> <!-- {{headertitle}} -->
+
+    <ion-thumbnail slot="end">
+      <img class="logo-header" src="../../../assets/img/LogoDigimon.png" alt="">
+    </ion-thumbnail>
+  </ion-toolbar>
+</ion-header>
+

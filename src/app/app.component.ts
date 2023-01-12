@@ -5,12 +5,14 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+
+
   public appPages = [
     { title: 'Home', url: 'home', icon: 'home' },
-    { title: 'About', url: 'about', icon: 'paper-plane' },
-    { title: 'Clima', url: 'clima', icon: 'heart' },
-    { title: 'Conversor', url: 'conversor', icon: 'archive' },
-    { title: 'Lista Digimon', url: 'lista-digimon', icon: 'trash' },
+    { title: 'About', url: 'about', icon: 'people' },
+    { title: 'Clima', url: 'clima', icon: 'sunny' },
+    { title: 'Conversor', url: 'conversor', icon: 'cash' },
+    { title: 'Lista Digimon', url: 'lista-digimon', icon: 'list' },
   ];
   constructor() {}
 }
