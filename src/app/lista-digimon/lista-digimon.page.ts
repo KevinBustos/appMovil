@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaDigimonPage implements OnInit {
 
+  titulo='Listada Digimon'
+
   constructor() { }
 
   ngOnInit() {

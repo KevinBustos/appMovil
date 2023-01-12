@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutPage implements OnInit {
 
+  titulo='About';
+
   constructor() { }
 
   ngOnInit() {
