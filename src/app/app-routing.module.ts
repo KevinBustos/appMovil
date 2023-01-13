@@ -42,11 +42,7 @@ const routes: Routes = [
     redirectTo: 'registro',
     pathMatch: 'full'
   },
-  {
-    path: '**',
-    redirectTo: 'error',
-    pathMatch: 'full'
-  },
+ 
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
@@ -83,6 +79,28 @@ const routes: Routes = [
     path: 'error',
     loadChildren: () => import('./error/error.module').then( m => m.ErrorPageModule)
   },
+  {
+    path: 'kevin',
+    loadChildren: () => import('./kevin/kevin.module').then( m => m.KevinPageModule)
+  },
+  {
+    path: 'javier',
+    loadChildren: () => import('./javier/javier.module').then( m => m.JavierPageModule)
+  },
+  {
+    path: 'nicolas',
+    loadChildren: () => import('./nicolas/nicolas.module').then( m => m.NicolasPageModule)
+  },
+  {
+    path: 'david',
+    loadChildren: () => import('./david/david.module').then( m => m.DavidPageModule)
+  },
+  {
+    path: '**',
+    redirectTo: 'error',
+    pathMatch: 'full'
+  },
+
 
 
 ];
