@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -8,11 +9,27 @@ import { Component, OnInit } from '@angular/core';
 export class AboutPage implements OnInit {
 
   titulo='About';
-  isNotLogin = true;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+
+  gotokevin(){
+    this.router.navigate(['/kevin'])
+  }
+
+  gotonicolas(){
+    this.router.navigate(['/nicolas'])
+  }
+
+  gotojavier(){
+    this.router.navigate(['/javier'])
+  }
+
+  gotodavid(){
+    this.router.navigate(['/david'])
   }
 
 }
