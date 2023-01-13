@@ -1,6 +1,54 @@
-<app-encabezado [isNotLogin]="isNotLogin" [titulo]="titulo"></app-encabezado>
+<app-encabezado [titulo]="titulo"></app-encabezado>
 
 <ion-content>
-
     
+    <ion-list lines="none">
+        <ion-item>
+            <ion-avatar>
+                <img src="assets/img/WhatsApp Image 2023-01-12 at 20.36.16.jpeg" alt="">
+    
+            </ion-avatar>
+            <ion-label>
+                <h3 style="margin: 10px;">Kevin Bustos</h3>
+               
+            </ion-label>
+            <ion-icon name="chevron-forward-outline" (click)="gotokevin()" ></ion-icon>
+            
+        </ion-item>
+
+        <ion-item>
+            <ion-avatar>
+                <img src="https://i1.sndcdn.com/avatars-Z300ASxwgnOHbXTD-7pz0Cw-t500x500.jpg" alt="">
+    
+            </ion-avatar>
+            <ion-label>
+                <h3 style="margin: 10px;">Nicolas Cacéres</h3>
+            </ion-label>
+            <ion-icon name="chevron-forward-outline" (click)="gotonicolas()"></ion-icon>
+        </ion-item>
+
+        <ion-item>
+            <ion-avatar>
+                <img src="assets/img/WhatsApp Image 2023-01-12 at 21.15.22.jpeg" alt="">
+            </ion-avatar>
+            <ion-label>
+                <h3 style="margin: 10px;">Javier Ramirez</h3>
+            </ion-label>
+            <ion-icon name="chevron-forward-outline" (click)="gotojavier()"></ion-icon>
+        </ion-item>
+
+        <ion-item>
+            <ion-avatar>
+                <img src="assets/img/jotaro.jpg" alt="">
+    
+            </ion-avatar>
+            <ion-label>
+                <h3 style="margin: 10px;">David Luengo</h3>
+            </ion-label>
+            <ion-icon name="chevron-forward-outline" (click)="gotodavid()"></ion-icon>
+        </ion-item>
+        
+    </ion-list>
+
 </ion-content>
+
