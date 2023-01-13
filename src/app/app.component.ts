@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, ToastController } from '@ionic/angular';
+import { ModalController, NavController, ToastController } from '@ionic/angular';
+import { SplashComponent } from './splash/splash.component';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -15,7 +16,9 @@ export class AppComponent {
     { title: 'Conversor', url: 'conversor', icon: 'cash' },
     { title: 'Lista Digimon', url: 'lista-digimon', icon: 'list' },
   ];
-  constructor(public navCtrl: NavController, private toastController: ToastController) {
+  constructor(public navCtrl: NavController, private toastController: ToastController, private modalController: ModalController) {
+
+    this.presentSplash();
 
   }
 
@@ -31,5 +34,13 @@ export class AppComponent {
     });
 
     await toast.present();
+  }
+
+  async presentSplash(){
+    const modal = await this.modalController.create({
+      component: SplashComponent,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
   }
 }
