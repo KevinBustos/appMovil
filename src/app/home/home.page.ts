@@ -9,6 +9,7 @@ export class HomePage implements OnInit {
 
   titulo='Home';
   isNotLogin = true;
+  usuario=''
   
   constructor() { }
 

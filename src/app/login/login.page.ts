@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { AlertController, LoadingController, NavController } from '@ionic/angular';
+import { NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,6 +13,7 @@ export class LoginPage implements OnInit {
   titulo='Login';
   isNotLogin = false;
   formularioLogin:FormGroup;
+  usuario='';
 
   constructor(public fb: FormBuilder, 
     private alertController: AlertController, 
@@ -37,9 +39,18 @@ this.formularioLogin = this.fb.group({
        ('user' == f.nombre && '123' == f.contrasenia)){
 
 
-      console.log('Ingresado')
+      console.log('Ingresado');
 
-      this.navCtrl.navigateRoot('home')
+      var usuario = this.formularioLogin.value;
+
+      const navigationExtras: NavigationExtras = {
+        queryParams: {
+          usuario : JSON.stringify(usuario)
+        }
+      };
+  
+      this.navCtrl.navigateForward(['home'],navigationExtras);
+
 
       const loading = await this.loadingCtrl.create({
         message: 'Bienvenido ' + f.nombre,
@@ -58,6 +69,19 @@ this.formularioLogin = this.fb.group({
       await alert.present();
     }
 
+  }
+
+  pasDatos(){
+    var usuario = this.formularioLogin.value;
+
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        usuario : JSON.stringify(usuario)
+      }
+    };
+
+    this.navCtrl.navigateForward(['home'],navigationExtras);
+    
   }
 
 }
